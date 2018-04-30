@@ -1,0 +1,24 @@
+body {
+    background: linear-gradient(0deg, #40a0e0 0, #40e0d0 100%);
+}
+
+.hello {
+    font-family: Montserrat;
+    font-weight: 500;
+    color: #fff;
+}
+
+.links .nav-item:not(:last-child) {
+    padding-right: 3em;
+}
+
+.links .nav-item > a {
+    color: #fff;
+    font-size: 3.25em;
+    height: 0;
+}
+
+.links .nav-item a > img {
+    height: 48px;
+    margin-top: -10px;
+}

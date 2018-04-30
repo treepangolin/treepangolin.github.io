@@ -22,3 +22,9 @@ body {
     height: 48px;
     margin-top: -10px;
 }
+
+@media (max-width: 768px) {
+    .links .nav-item:first-child {
+        padding-left: 3em;
+    }
+}

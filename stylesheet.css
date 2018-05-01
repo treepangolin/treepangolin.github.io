@@ -8,8 +8,8 @@ body {
     color: #fff;
 }
 
-.links .nav-item:not(:last-child) {
-    padding-right: 3em;
+.links .nav-item {
+    padding: 0 2.25em;
 }
 
 .links .nav-item > a {
@@ -19,12 +19,6 @@ body {
 }
 
 .links .nav-item a > img {
-    height: 48px;
+    height: 32px;
     margin-top: -10px;
-}
-
-@media (max-width: 768px) {
-    .links .nav-item:first-child {
-        padding-left: 3em;
-    }
 }

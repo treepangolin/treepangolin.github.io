@@ -13,6 +13,7 @@ function chooseImage() {
 
     image.onload = function() {
         mascot.appendChild(image)
+        mascot.removeChild(document.getElementById("placeholder"))
         image.classList.add("animated", "zoomInDown")
     }
 

@@ -1,4 +1,4 @@
-var images = ["awoo.png", "game.png", "hide.png"]
+var images = ["awoo.png", "game.png", "hide.png", "thumbsup.png"]
 var image = new Image()
 var faLogo = new Image()
 

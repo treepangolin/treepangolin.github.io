@@ -1,9 +1,17 @@
-window.onload = chooseSticker;
+window.onload = chooseImage;
 
-var stickers = ["awoo.png", "game.png", "hide.png"]
+var images = ["awoo.png", "game.png", "hide.png"]
+var image = new Image()
 
-function chooseSticker() {
-    var random = Math.floor(Math.random() * stickers.length)
+function chooseImage() {
+    var random = Math.floor(Math.random() * images.length)
+    var mascot = document.getElementById("mascot")
 
-    document.getElementById("sticker").src = stickers[random]
+    image.onload = function() {
+        mascot.appendChild(image)
+        image.classList.add("animated", "fadeInDown")
+    }
+
+    image.src = images[random]
+    image.style.width = "320px"
 }

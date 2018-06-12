@@ -13,12 +13,11 @@ function chooseImage() {
     image.onload = function() {
         mascot.appendChild(image)
         mascot.removeChild(document.getElementById("placeholder"))
-        image.classList.add("animated", "zoomInDown")
+        image.classList.add("animated", "zoomInDown", "mascot")
     }
 
     image.src = images[random]
     localStorage.setItem("lastMascotShown", random)
-    image.style.width = "320px"
 }
 
 faLogo.onload = function() {

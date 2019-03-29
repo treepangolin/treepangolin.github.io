@@ -13,7 +13,7 @@ window.onload = function() {
         fadeLinks();
         mascot.appendChild(image);
         mascot.removeChild(document.getElementById("placeholder"));
-        image.classList.add("animated", "zoomInDown", "mascot");
+        image.classList.add("animated", "fadeInDownBig", "mascot");
     };
 
     image.src = "img/stickers/" + images[random];
@@ -21,6 +21,6 @@ window.onload = function() {
 };
 
 function fadeLinks() {
-    links.classList.add("animated", "fadeIn");
+    links.classList.add("animated", "fadeInUp");
     links.classList.remove("invisible");
 }

@@ -25,6 +25,7 @@ body {
 
 .mascot {
     width: 320px;
+    padding: 1.5em;
 }
 
 @media (max-width: 992px) {

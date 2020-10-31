@@ -1,51 +1,118 @@
+@media only screen and (max-width: 600px) {
+    body {
+        padding: inherit !important;
+    }
+
+    #greeting {
+        font-size: 36pt !important;
+    }
+
+    #subtitle {
+        font-size: 14pt;
+    }
+
+    #header, #footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .anim-first, .anim-second {
+        animation-name: backInDown !important;
+    }
+
+    .container > div {
+        flex-grow: 1;
+    }
+} 
+
 body {
-    background: linear-gradient(0deg, #40a0e0 0, #40e0d0 100%);
-}
-
-.hello {
-    font-family: Montserrat;
-    font-weight: 500;
+    background: rgba(20, 20, 20, 1);
+    font-family: "Monaco", "Anonymous Pro", monospace;
     color: #fff;
+    padding: 5em;
 }
 
-.links .nav-item {
-    padding: 0 2.25em;
-}
-
-.links .nav-item > a {
+a {
+    background-image: linear-gradient(45deg, rgb(64, 224, 208), rgb(76, 64, 224));
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+    background-position: 0 88%;
+    transition: background-size 250ms ease;
     color: #fff;
-    font-size: 3.25em;
-    height: 0;
+    text-decoration: none;
 }
 
-.links .nav-item a > img {
-    height: 38px;
-    margin-top: -10px;
+a:hover {
+    background-size: 100% 88%;
 }
 
-.mascot {
-    width: 320px;
-    padding: 1.5em;
+.accent {
+    background: linear-gradient(45deg, rgb(64, 224, 208), rgb(76, 64, 224));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-@media (max-width: 992px) {
-    .mascot {
-        width: 256px;
-    }
-
-    .links .nav-item {
-        padding: 0 1.75em;
-    }
+#greeting, #subtitle {
+    font-family: Biryani, sans-serif;
+    margin: 0 auto;
 }
 
-@media (max-width: 360px) {
-    .mascot {
-        width: 200px;
-    }
+#greeting {
+    font-weight: 900;
+    font-size: 72pt;
 }
 
-@media (max-height: 360px) {
-    .mascot {
-        width: 156px;
-    }
+#subtitle {
+    font-weight: 200;
+    margin-bottom: inherit;
+}
+
+.anim {
+    animation: fadeInLeft;
+}
+
+.first {
+    animation-duration: 0.9s;
+}
+
+.second {
+    animation-duration: 1s;
+    margin-top: -2em;
+}
+
+.third {
+    animation-duration: 1.1s
+}
+
+.fourth {
+    animation-duration: 1.2s
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    justify-content: left;
+    font-size: 16pt;
+}
+
+.container ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.identifiers {
+    margin-left: auto;
+    text-align: left;
+    padding: 0;
+}
+
+.links {
+    margin-right: auto;
+    text-align: right;
 }

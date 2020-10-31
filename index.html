@@ -1,11 +1,10 @@
 <!DOCTYPE HTML>
-<html style="height:100%">
+<html>
 <head>
 	<!-- Begin stylesheets, fonts, and scripts -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Biryani:wght@200;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/stylesheet.css">
-    <link rel="stylesheet" href="css/animate.css">
 
     <script src="js/global.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
@@ -16,39 +15,12 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
     <!-- End browser compat -->
 
-	<!-- Begin Apple & mobile compat -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-	<link rel="manifest" href="meta/site.webmanifest">
-	<link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#40e0d0">
-	<meta name="apple-mobile-web-app-title" content="Callum Husky">
-	<meta name="application-name" content="Callum Husky">
-	<meta name="msapplication-TileColor" content="#00aba9">
-	<meta name="theme-color" content="#40e0d0">
-	<!-- End Apple & mobile compat -->
-
-	<!-- Begin Twitter compat -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="https://turquoise.dog">
-    <meta name="twitter:title" content="Turquoise dot Dog">
-    <meta name="twitter:description" content="Callum's landing page">
-    <meta property="twitter:image" content="https://turquoise.dog/img/stickers/heart.png">
-	<!-- End Twitter compat -->
-
-	<!-- Begin site meta -->
-    <meta name="description" content="Callum's landing page">
-    <meta name="keywords" content="husky, teal, turquoise, furry, trash">
-    <meta name="author" content="Callum the Teal Husky">
-    <meta name="copyright" content="Jacob Koenen">
-    <!-- End site meta -->
-
 	<title>turquoise dot dog</title>
 </head>
-<body style="height:100%">
-    <div class="container-fluid d-flex h-100">
+<body>
+    <!-- <div class="container-fluid d-flex h-100">
         <div class="align-self-center text-center w-100">
-            <h1 class="hello invisible" id="hello"></h1>
+            <h1 class="hello" id="hello"></h1>
             <div id="mascot">
                 <img class="invisible" id="placeholder" style="width:320px" src="img/stickers/awoo.png">
             </div>
@@ -67,6 +39,39 @@
                 </li>
             </ul>
         </div>
+    </div> -->
+    <div id="header">
+        <h1 class="anim first">
+            <span class="accent" id="greeting"></span>
+        </h1>
+        <h2 class="anim second">
+            <span class="accent" id="subtitle">welcome to turquoise.dog</span>
+        </h2>
+    </div>
+    
+    <div class="flex container anim third">
+        <div class="flex">
+            <ul class="identifiers">
+                <li>discord</li>
+                <li>twitter</li>
+                <li>steam</li>
+                <li>last.fm</li>
+                <li>github</li>
+            </ul>
+        </div>
+        <div class="flex">
+            <ul class="links">
+                <li>treepangolin#6969</li>
+                <li><a href="https://twitter.com/callumhusky">@callumHusky</a></li>
+                <li><a href="https://steamcommunity.com/id/TreePangolin">/id/TreePangolin</a></li>
+                <li><a href="https://last.fm/user/treepangolin">/user/treepangolin</a></li>
+                <li><a href="https://github.com/treepangolin">treepangolin</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="footer" class="anim fourth">
+        <span class="accent">💙&nbsp;</span>🇨🇦
     </div>
 </body>
 </html>

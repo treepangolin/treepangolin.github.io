@@ -1,26 +1,9 @@
-var images = ["confused.png", "heart.png", "itsk.png"];
-var image = new Image();
+let greetings = [
+    "ciao", "bonjour", "hello", "hi", "こんにちは", "hallo"
+]
 
-window.onload = function() {
-    var random = Math.floor(Math.random() * images.length);
-    var mascot = document.getElementById("mascot");
+let picked_greeting = Math.floor(Math.random() * greetings.length)
 
-    while (random == localStorage.getItem("lastMascotShown")) {
-        random = Math.floor(Math.random() * images.length);
-    }
-
-    image.onload = function() {
-        fadeLinks();
-        mascot.appendChild(image);
-        mascot.removeChild(document.getElementById("placeholder"));
-        image.classList.add("animated", "fadeInDownBig", "mascot");
-    };
-
-    image.src = "img/stickers/" + images[random];
-    localStorage.setItem("lastMascotShown", random);
-};
-
-function fadeLinks() {
-    links.classList.add("animated", "fadeInUp");
-    links.classList.remove("invisible");
-}
+document.addEventListener('DOMContentLoaded', function(event) {
+    document.getElementById('greeting').innerHTML = greetings[picked_greeting]
+})
